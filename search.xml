@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/10/11/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/01-%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/%E5%8D%AB%E6%98%9F%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/"/>
+      <url>/2024/10/11/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/01-%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/%E5%8D%AB%E6%98%9F%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="卫星链路计算相关学习"><a href="#卫星链路计算相关学习" class="headerlink" title="卫星链路计算相关学习"></a>卫星链路计算相关学习</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote><p>卫星链路计算是每次申请项目时必做的一个环节，我自己也参与计算了两三次，但总觉得自己理解的不够到位，尽管老师和师兄们说很简单，但我始终不相信自己，想从头到尾理解一遍，这也是写这篇博客的初衷。</p></blockquote><h2 id="卫星链路计算中的相关参数"><a href="#卫星链路计算中的相关参数" class="headerlink" title="卫星链路计算中的相关参数"></a>卫星链路计算中的相关参数</h2><p>卫星链路计算中主要用到的相关参数有：<br>    - <strong>天线的增益与波束宽度</strong><br>    - <strong>有效全向辐射功率</strong><br>    - <strong>自由空间传输损耗</strong><br>    - <strong>噪声与损耗</strong><br>    - <strong>转发器工作点</strong><br>    - <strong>转发器的饱和通量密度</strong><br>    - <strong>品质因数G&#x2F;T</strong></p><h3 id="天线的增益与波束宽度"><a href="#天线的增益与波束宽度" class="headerlink" title="天线的增益与波束宽度"></a>天线的增益与波束宽度</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>青春语句</title>
       <link href="/2024/10/07/%E7%94%9F%E6%B4%BB%E5%A8%B1%E4%B9%90/%E9%9D%92%E6%98%A5/"/>
       <url>/2024/10/07/%E7%94%9F%E6%B4%BB%E5%A8%B1%E4%B9%90/%E9%9D%92%E6%98%A5/</url>
