@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>现代信号处理Ⅰ学习记录</title>
+      <link href="/2024/10/14/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E7%8E%B0%E4%BB%A3%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/%E7%8E%B0%E4%BB%A3%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%861/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+      <url>/2024/10/14/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E7%8E%B0%E4%BB%A3%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%86/%E7%8E%B0%E4%BB%A3%E6%95%B0%E5%AD%97%E4%BF%A1%E5%8F%B7%E5%A4%84%E7%90%861/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Modern-Digital-Signal-Processing"><a href="#Modern-Digital-Signal-Processing" class="headerlink" title="Modern Digital Signal Processing"></a>Modern Digital Signal Processing</h1><blockquote><p>Statistical     Random</p></blockquote><hr><ol><li>Linear Processing<ul><li>Fundamental<ul><li>Statistical Foundation</li><li>Orthogonal</li><li>Orthogonalization</li></ul></li><li>Typical<ul><li>Wiener,  Kalman</li></ul></li><li>Extension<ul><li>SVM, Kernel, Regularization</li></ul></li></ul></li><li>Adaptive Processing<ul><li>Adaptive Filter, LMS, RLS</li></ul></li><li>Spectral Processing<ul><li>Direct(Non-Parametric), Filter Banks</li></ul></li></ol><hr><blockquote><p>1950’s~1980’s     <strong>Linear, Orthogonal, Stationary, Gaussian</strong></p></blockquote><h2 id="Chapter-1"><a href="#Chapter-1" class="headerlink" title="Chapter 1"></a>Chapter 1</h2><h3 id="Review-of-Probability-Theory"><a href="#Review-of-Probability-Theory" class="headerlink" title="Review of Probability Theory"></a>Review of Probability Theory</h3><p><strong>概率的定义：</strong></p><p>Uncertainty $\rightarrow$ Statistical Experiment $\rightarrow$ Sample Points $\rightarrow$ Sample Space $(\Omega)$ $\rightarrow$ Possibility(<strong>Prior</strong>) </p><p>$\rightarrow$ Probability(概率)     $P: Z^\Omega\rightarrow[0,1]$</p><p><strong>概率与统计</strong></p><p>Data $\longrightarrow$ <strong>Model</strong> $\longrightarrow$ Decision    (Big Data: Data $\longrightarrow$ Decision)<br>        $\Downarrow$                   $\Downarrow$<br>    Statistics      Probability </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 理论学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 课程学习记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>卫星链路计算</title>
       <link href="/2024/10/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/01-%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/%E5%8D%AB%E6%98%9F%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/"/>
       <url>/2024/10/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/01-%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/%E5%8D%AB%E6%98%9F%E9%93%BE%E8%B7%AF%E9%A2%84%E7%AE%97/</url>
