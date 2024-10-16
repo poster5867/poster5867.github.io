@@ -8,7 +8,7 @@
       <link href="/2024/10/16/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/"/>
       <url>/2024/10/16/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="日常思考及知识点记录"><a href="#日常思考及知识点记录" class="headerlink" title="日常思考及知识点记录"></a>日常思考及知识点记录</h1><blockquote><p>此文档主要记录一些日常经过思考的问题，以及一些容易混淆的知识点，不限于专业知识，可能包括其他学科……</p></blockquote><h2 id="数学类"><a href="#数学类" class="headerlink" title="数学类"></a>数学类</h2><h3 id="1-充要条件的充分和必要性"><a href="#1-充要条件的充分和必要性" class="headerlink" title="1 充要条件的充分和必要性"></a>1 充要条件的充分和必要性</h3><blockquote><p>充要条件的充分性和必要性怎么区分？</p><p>记住一点：根据条件椎结论就是证明充分性，根据结论推条件就是证明必要性</p></blockquote><p>充要条件的表述一般有3钟表述方式：</p><ul><li>求证：A是B的充要条件</li><li>求证：A的充要条件是B</li><li>求证：$A\Longleftrightarrow B $（等价于第二条，即A的充要条件是B）</li></ul><blockquote><p>怎么看哪个是条件呢？如上提取主谓宾，谁是条件一目了然。在①中，A是条件，由A推出B就是证明充分性，反之由B推出A就是证明必要性;在②③中，条件是B，所以由B推出A就是证明充分性，反之由A推出B就是证明必要性。</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1>日常思考及知识点记录</h1><blockquote><p>此文档主要记录一些日常经过思考的问题，以及一些容易混淆的知识点，不限于专业知识，可能包括其他学科……</p></blockquote><h2 id="数学类">数学类</h2><h3 id="充要条件的充分和必要性">充要条件的充分和必要性</h3><blockquote><p>充要条件的充分性和必要性怎么区分？</p><p>记住一点：根据条件椎结论就是证明充分性，根据结论推条件就是证明必要性</p></blockquote><p>充要条件的表述一般有3钟表述方式：</p><ul><li>求证：A是B的充要条件</li><li>求证：A的充要条件是B</li><li>求证：$A\Longleftrightarrow B $（等价于第二条，即A的充要条件是B）</li></ul><blockquote><p>怎么看哪个是条件呢？如上提取主谓宾，谁是条件一目了然。在①中，A是条件，由A推出B就是证明充分性，反之由B推出A就是证明必要性;在②③中，条件是B，所以由B推出A就是证明充分性，反之由A推出B就是证明必要性。</p></blockquote>]]></content>
       
       
       <categories>
