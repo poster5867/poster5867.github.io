@@ -1,0 +1,231 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Poster's Blog</title><meta name="author" content="Poster"><meta name="copyright" content="Poster"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="路漫漫其修远兮，吾将上下而求索">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Poster&#39;s Blog">
+<meta property="og:url" content="http://example.com/page/2/index.html">
+<meta property="og:site_name" content="Poster&#39;s Blog">
+<meta property="og:description" content="路漫漫其修远兮，吾将上下而求索">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/images/miku.png">
+<meta property="article:author" content="Poster">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/miku.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":true,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Poster\'s Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: true,
+  isToc: false,
+  postUpdate: '2025-02-01 21:08:00'
+}</script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
+
+  preloader.initLoading()
+  window.addEventListener('load', preloader.endLoading)
+
+  if (false) {
+    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
+    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/images/miku.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/images/miku.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Poster's Blog</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories"><span> Categories</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></li><li><a class="site-page child" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></li></ul></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="site-info"><h1 id="site-title">Poster's Blog</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts nc" id="recent-posts"><div class="recent-post-items"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/02BPSK-DSSS/BPSK-DSSS%E7%B3%BB%E7%BB%9F/" title="BPSK-DSSS收发系统"><img class="post-bg" src="/images/satellite.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="BPSK-DSSS收发系统"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/02BPSK-DSSS/BPSK-DSSS%E7%B3%BB%E7%BB%9F/" title="BPSK-DSSS收发系统">BPSK-DSSS收发系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-12T03:11:57.000Z" title="发表于 2022-12-12 11:11:57">2022-12-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/">工程实践</a></span></div><div class="content">MATLAB仿真 目录  MATLAB仿真  目录 系统实现  系统框图   仿真代码  生成m序列 扩频码与映射序列相乘 根升余弦滤波 上变频（乘以载波） 物理信道（添加噪声） 下变频（乘以载波） 解扩+匹配滤波 采样+判决 画出系统输入输出序列对比   误码率曲线仿真  代码 输出图像   附录代码  代码1 代码2      系统实现 系统框图  唯一与BPSK不同的是，对极信号与扩频码进行相乘。 仿真代码 生成m序列 123456% 生成m序列data_len = 10;               %数据长度 n = 3;                       %阶次p = 2^n - 1;                 %循环周期ms = idinput(p,&#x27;prbs&#x27;);mg = repmat(ms&#x27;,1,data_len); %重复m序列 1234567figure;subplot(121);stairs(ms);title(&#x27;m序列时域波形&#x27;);ylim([-1.5 1.5]);c =...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/03DDS/DDS%E5%8E%9F%E7%90%86%E5%8F%8A%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/" title="DDS原理及简单应用"><img class="post-bg" src="/images/satellite.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DDS原理及简单应用"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/03DDS/DDS%E5%8E%9F%E7%90%86%E5%8F%8A%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/" title="DDS原理及简单应用">DDS原理及简单应用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-12T03:11:57.000Z" title="发表于 2022-12-12 11:11:57">2022-12-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/">工程实践</a></span></div><div class="content">DDS原理学习 何为DDS DDS定义与优点  DDS: Direct digital synthesis 直接数字频率合成，可以用来合成周期性的信号序列。   优点：频率转换时间短；频率分辨率极高；相位变化连续；输出波形灵活  DDS原理  在参考时钟的驱动下，相位累加器对频率控制字进行线性累加，得到的相位码对波形存储器寻址，使之输出相应的幅度码，经过模数转换器得到相应的阶梯波。    也就是，我们事先将想要的波形所对应的数值按照一定的要求存储于ROM 中，然后在硬件工作的时候，对 ROM 进行寻址，得到相应的波形数据，再通过 D/A 输出，以此获得我们目标波形。  角度与波形  从 DDS 的原理可以看出，DDS 可以产生任意周期性的波形，比如 sine，cosine，三角波等。    以 sine 为例，可以看出来，波形电平最大值等于圆的半径，产生的波形的频率等价于扫过 2π 角度的速度。  频率控制字   从上图可以看出来，输出信号的频率与扫描的角速度是有关系的。  $$ 频率=\frac{2π}{角速度} $$  但由于波形数据是存储在 ROM...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/01BPSK/BPSK%E6%94%B6%E5%8F%91%E7%B3%BB%E7%BB%9F/" title="BPSK收发系统"><img class="post-bg" src="/images/satellite.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="BPSK收发系统"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/12/12/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/03-%E7%A1%AC%E4%BB%B6%E5%9F%B9%E8%AE%AD2022/01BPSK/BPSK%E6%94%B6%E5%8F%91%E7%B3%BB%E7%BB%9F/" title="BPSK收发系统">BPSK收发系统</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-12-12T03:11:57.000Z" title="发表于 2022-12-12 11:11:57">2022-12-12</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/">工程实践</a></span></div><div class="content">BPSK收发系统 理论部分 数字调制信号的表示 调制方式的种类 有记忆调制  📌无记忆调制   在无记忆调制方式中，二进制序列分成每段长度为$k$的序列，再将每段序列映射成$s_m(t)$ ，而不考虑先前发送的信号如何。   无记忆调制方式——以BPSK为例 MPSK表达式  BPSK表达式  图形简述过程如下：  PSK和QAM   QAM 和 PSK 的区别   从左边的星座图可以很显然看出，QAM 的幅度是不恒定的，而 PSK 的幅度是恒定的，即 PSK 只会改变信号的相位，而 QAM 不仅改变信号的相位，还改变信号的幅度。 根升余弦成型   带限信道 我们的所有通信信道都一定不是无限带宽的，对于带限信道，我们可以将其表征为等效低通频率响应 $C(f)$。根据以前通信原理相关知识，我们可以知道信号通过带限滤波器后，其非理想信道频率响应特性 $C(f)$ 会引起幅度和延时失真，在接收端特定时间采样时，不同信号间产生重叠，因此出现符号间干扰。这个时候，我们就要从想办法克服码间串扰...</div></div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info is-center"><div class="avatar-img"><img src="/images/miku.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Poster</div><div class="author-info-description">路漫漫其修远兮，吾将上下而求索</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">13</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">13</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/poster5867"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/10/31/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/02-FPGA/FPGA_Study/" title="通信FPGA相关合集"><img src="/images/FPGA-BANNER.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="通信FPGA相关合集"/></a><div class="content"><a class="title" href="/2024/10/31/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/02-FPGA/FPGA_Study/" title="通信FPGA相关合集">通信FPGA相关合集</a><time datetime="2024-10-31T13:12:06.000Z" title="发表于 2024-10-31 21:12:06">2024-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/31/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/DFT-s-OFDM/dft-s-ofdm_waveform/" title="DFT-S-OFDM 波形设计"><img src="/images/lte_waveform.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="DFT-S-OFDM 波形设计"/></a><div class="content"><a class="title" href="/2024/10/31/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/DFT-s-OFDM/dft-s-ofdm_waveform/" title="DFT-S-OFDM 波形设计">DFT-S-OFDM 波形设计</a><time datetime="2024-10-31T13:12:06.000Z" title="发表于 2024-10-31 21:12:06">2024-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/29/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/%E6%8A%80%E8%83%BD%E6%80%BB%E7%BB%93/" title="技能总结"><img src="/images/skills.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="技能总结"/></a><div class="content"><a class="title" href="/2024/10/29/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%8A%80%E8%83%BD%E5%AD%A6%E4%B9%A0/%E6%8A%80%E8%83%BD%E6%80%BB%E7%BB%93/" title="技能总结">技能总结</a><time datetime="2024-10-29T13:05:30.000Z" title="发表于 2024-10-29 21:05:30">2024-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/28/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/OFDM%E5%AD%A6%E4%B9%A0/ofdm%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/" title="OFDM相关学习"><img src="/images/ofdm.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="OFDM相关学习"/></a><div class="content"><a class="title" href="/2024/10/28/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/OFDM%E5%AD%A6%E4%B9%A0/ofdm%E7%9B%B8%E5%85%B3%E5%AD%A6%E4%B9%A0/" title="OFDM相关学习">OFDM相关学习</a><time datetime="2024-10-28T07:53:12.000Z" title="发表于 2024-10-28 15:53:12">2024-10-28</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/10/16/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/" title="思考知识记录"><img src="/images/thinking.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="思考知识记录"/></a><div class="content"><a class="title" href="/2024/10/16/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/%E6%80%9D%E8%80%83%E8%AE%B0%E5%BD%95/%E7%90%90%E7%A2%8E%E7%9F%A5%E8%AF%86%E8%AE%B0%E5%BD%95/" title="思考知识记录">思考知识记录</a><time datetime="2024-10-16T02:02:03.000Z" title="发表于 2024-10-16 10:02:03">2024-10-16</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>分类</span>
+            
+          </div>
+          <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E5%B7%A5%E7%A8%8B%E5%AE%9E%E8%B7%B5/"><span class="card-category-list-name">工程实践</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%90%86%E8%AE%BA%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">理论学习</span><span class="card-category-list-count">3</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E7%94%9F%E6%B4%BB%E6%84%9F%E6%83%B3/"><span class="card-category-list-name">生活感想</span><span class="card-category-list-count">1</span></a></li>
+          </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E4%BB%BF%E7%9C%9F/" style="font-size: 1.1em; color: #999">仿真</a> <a href="/tags/%E6%8A%80%E8%83%BD/" style="font-size: 1.1em; color: #999">技能</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 1.1em; color: #999">思考</a> <a href="/tags/DFT-S-OFDM/" style="font-size: 1.1em; color: #999">DFT-S-OFDM</a> <a href="/tags/%E6%8E%A8%E5%AF%BC/" style="font-size: 1.1em; color: #999">推导</a> <a href="/tags/%E5%B8%B8%E8%AF%86/" style="font-size: 1.1em; color: #999">常识</a> <a href="/tags/%E8%AF%BE%E7%A8%8B%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/" style="font-size: 1.1em; color: #999">课程学习记录</a> <a href="/tags/Verilog/" style="font-size: 1.3em; color: #99a1ac">Verilog</a> <a href="/tags/MATLAB/" style="font-size: 1.5em; color: #99a9bf">MATLAB</a> <a href="/tags/%E7%A1%AC%E4%BB%B6/" style="font-size: 1.1em; color: #999">硬件</a> <a href="/tags/%E8%AF%97%E8%AF%8D/" style="font-size: 1.1em; color: #999">诗词</a> <a href="/tags/%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC/" style="font-size: 1.1em; color: #999">公式推导</a> <a href="/tags/FPGA/" style="font-size: 1.3em; color: #99a1ac">FPGA</a></div></div><div class="card-widget card-archives">
+    <div class="item-headline">
+      <i class="fas fa-archive"></i>
+      <span>归档</span>
+      
+    </div>
+    <ul class="card-archive-list">
+  
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2024/10/">
+          <span class="card-archive-list-date">十月 2024</span>
+          <span class="card-archive-list-count">9</span>
+        </a>
+      </li>
+    
+      <li class="card-archive-list-item">
+        <a class="card-archive-list-link" href="/archives/2022/12/">
+          <span class="card-archive-list-date">十二月 2022</span>
+          <span class="card-archive-list-count">4</span>
+        </a>
+      </li>
+    </ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">13</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-02-01T13:08:00.798Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2025 By Poster</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>window.typedJSFn = {
+  init: str => {
+    window.typed = new Typed('#subtitle', Object.assign({
+      strings: str,
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: true,
+      backSpeed: 50,
+    }, null))
+  },
+  run: subtitleType => {
+    if (true) {
+      if (typeof Typed === 'function') {
+        subtitleType()
+      } else {
+        btf.getScript('https://cdn.jsdelivr.net/npm/typed.js/dist/typed.umd.min.js').then(subtitleType)
+      }
+    } else {
+      subtitleType()
+    }
+  }
+}
+btf.addGlobalFn('pjaxSendOnce', () => { typed.destroy() }, 'typedDestroy')
+</script><script>function subtitleType () {
+  if (true) {
+    typedJSFn.init(["平凡的脚步也可以走完伟大的行程","不为模糊不清的未来担忧，只为清清楚楚的现在努力"])
+  } else {
+    document.getElementById("subtitle").textContent = "平凡的脚步也可以走完伟大的行程"
+  }
+}
+typedJSFn.run(subtitleType)</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
